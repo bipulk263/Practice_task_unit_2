@@ -1,0 +1,20 @@
+{
+  "name": "WebdriverIO",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^8.33.1",
+    "@wdio/local-runner": "^8.33.1",
+    "@wdio/mocha-framework": "^8.33.1",
+    "@wdio/spec-reporter": "^8.32.4"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "test:alert:handling": "wdio --spec ./test/specs/alert.handling.js",
+    "test:basic:auth": "wdio --spec ./test/specs/basic.auth.js",
+    "test:data:table": "wdio --spec ./test/specs/data.table.js",
+    "test:element:state": "wdio --spec ./test/specs/element.state.js",
+    "test:file:download": "wdio --spec ./test/specs/file.download.js",
+    "test:file:upload": "wdio --spec ./test/specs/file.upload.js",
+    "test:iframe": "wdio --spec ./test/specs/iframe.js"
+  }
+}
